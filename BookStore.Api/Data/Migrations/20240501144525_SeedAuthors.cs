@@ -21,7 +21,12 @@ namespace BookStore.Api.Data.Migrations
                     { 2, "John", "Tolkien", "Ronald Reuei", null },
                     { 3, "Herman", "Melville", null, null },
                     { 4, "Frank", "Herbert", null, null },
-                    { 5, null, "Seuss", null, "Dr." }
+                    { 5, null, "Seuss", null, "Dr." },
+                    { 6, "J.", "Rowling", "K.", null },
+                    { 7, "Stephen", "King", null, null },
+                    { 8, "John", "Green", null, null },
+                    { 9, "R.", "Stine", "L.", null },
+                    { 10, "Jane", "Austen", null, null }
                 });
         }
 
@@ -52,6 +57,31 @@ namespace BookStore.Api.Data.Migrations
                 table: "Authors",
                 keyColumn: "Id",
                 keyValue: 5);
+
+            migrationBuilder.DeleteData(
+                table: "Authors",
+                keyColumn: "Id",
+                keyValue: 6);
+
+            migrationBuilder.DeleteData(
+                table: "Authors",
+                keyColumn: "Id",
+                keyValue: 7);
+
+            migrationBuilder.DeleteData(
+                table: "Authors",
+                keyColumn: "Id",
+                keyValue: 8);
+
+            migrationBuilder.DeleteData(
+                table: "Authors",
+                keyColumn: "Id",
+                keyValue: 9);
+
+            migrationBuilder.DeleteData(
+                table: "Authors",
+                keyColumn: "Id",
+                keyValue: 10);
         }
     }
 }

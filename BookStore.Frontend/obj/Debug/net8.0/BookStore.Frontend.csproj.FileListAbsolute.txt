@@ -26,3 +26,4 @@ D:\Development\Learning\Fullstack\Blazor\BookStore\BookStore.Frontend\obj\Debug\
 D:\Development\Learning\Fullstack\Blazor\BookStore\BookStore.Frontend\obj\Debug\net8.0\BookStore.Frontend.pdb
 D:\Development\Learning\Fullstack\Blazor\BookStore\BookStore.Frontend\obj\Debug\net8.0\BookStore.Frontend.genruntimeconfig.cache
 D:\Development\Learning\Fullstack\Blazor\BookStore\BookStore.Frontend\obj\Debug\net8.0\ref\BookStore.Frontend.dll
+D:\Development\Learning\Fullstack\Blazor\BookStore\BookStore.Frontend\obj\Debug\net8.0\BookStore.Frontend.sourcelink.json

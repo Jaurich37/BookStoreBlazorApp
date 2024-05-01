@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookStore.Api.Data.Migrations
 {
     [DbContext(typeof(BookStoreContext))]
-    [Migration("20240501001733_SeedGenres")]
-    partial class SeedGenres
+    [Migration("20240501144525_SeedAuthors")]
+    partial class SeedAuthors
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -42,6 +42,72 @@ namespace BookStore.Api.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Authors");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            FirstName = "Orson",
+                            LastName = "Card",
+                            MiddleName = "Scott"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            FirstName = "John",
+                            LastName = "Tolkien",
+                            MiddleName = "Ronald Reuei"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            FirstName = "Herman",
+                            LastName = "Melville"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            FirstName = "Frank",
+                            LastName = "Herbert"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            LastName = "Seuss",
+                            Prefix = "Dr."
+                        },
+                        new
+                        {
+                            Id = 6,
+                            FirstName = "J.",
+                            LastName = "Rowling",
+                            MiddleName = "K."
+                        },
+                        new
+                        {
+                            Id = 7,
+                            FirstName = "Stephen",
+                            LastName = "King"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            FirstName = "John",
+                            LastName = "Green"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            FirstName = "R.",
+                            LastName = "Stine",
+                            MiddleName = "L."
+                        },
+                        new
+                        {
+                            Id = 10,
+                            FirstName = "Jane",
+                            LastName = "Austen"
+                        });
                 });
 
             modelBuilder.Entity("BookStore.Api.Entities.Book", b =>

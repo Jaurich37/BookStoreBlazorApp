@@ -124,3 +124,4 @@ D:\Development\Learning\Fullstack\Blazor\BookStore\BookStore.Api\bin\Debug\net8.
 D:\Development\Learning\Fullstack\Blazor\BookStore\BookStore.Api\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\Development\Learning\Fullstack\Blazor\BookStore\BookStore.Api\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\Development\Learning\Fullstack\Blazor\BookStore\BookStore.Api\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Development\Learning\Fullstack\Blazor\BookStore\Bookstore.Api\obj\Debug\net8.0\BookStore.Api.sourcelink.json

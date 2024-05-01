@@ -30,7 +30,12 @@ public class BookStoreContext(DbContextOptions<BookStoreContext> options) : DbCo
 			new { Id = 2, FirstName = "John", MiddleName = "Ronald Reuei", LastName = "Tolkien" },	
 			new { Id = 3, FirstName = "Herman", LastName = "Melville" },	
 			new { Id = 4, FirstName = "Frank", LastName = "Herbert" },
-			new { Id = 5, Prefix = "Dr.", LastName = "Seuss" }
+			new { Id = 5, Prefix = "Dr.", LastName = "Seuss" },
+			new { Id = 6, FirstName = "J.", MiddleName = "K.", LastName = "Rowling" },
+			new { Id = 7, FirstName = "Stephen", LastName = "King" },
+			new { Id = 8, FirstName = "John", LastName = "Green" },
+			new { Id = 9, FirstName = "R.", MiddleName = "L.", LastName = "Stine" },
+			new { Id = 10, FirstName = "Jane", LastName = "Austen" }
 		);
 		
 		modelBuilder.Entity<Book>().HasData(

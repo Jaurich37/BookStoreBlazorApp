@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookStore.Api.Data.Migrations
 {
     [DbContext(typeof(BookStoreContext))]
-    [Migration("20240501003612_SeedBooks")]
+    [Migration("20240501144543_SeedBooks")]
     partial class SeedBooks
     {
         /// <inheritdoc />
@@ -75,6 +75,38 @@ namespace BookStore.Api.Data.Migrations
                             Id = 5,
                             LastName = "Seuss",
                             Prefix = "Dr."
+                        },
+                        new
+                        {
+                            Id = 6,
+                            FirstName = "J.",
+                            LastName = "Rowling",
+                            MiddleName = "K."
+                        },
+                        new
+                        {
+                            Id = 7,
+                            FirstName = "Stephen",
+                            LastName = "King"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            FirstName = "John",
+                            LastName = "Green"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            FirstName = "R.",
+                            LastName = "Stine",
+                            MiddleName = "L."
+                        },
+                        new
+                        {
+                            Id = 10,
+                            FirstName = "Jane",
+                            LastName = "Austen"
                         });
                 });
 

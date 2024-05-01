@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookStore.Api.Data.Migrations
 {
     [DbContext(typeof(BookStoreContext))]
-    [Migration("20240501001758_SeedAuthors")]
-    partial class SeedAuthors
+    [Migration("20240501144450_SeedGenres")]
+    partial class SeedGenres
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -42,40 +42,6 @@ namespace BookStore.Api.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Authors");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            FirstName = "Orson",
-                            LastName = "Card",
-                            MiddleName = "Scott"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            FirstName = "John",
-                            LastName = "Tolkien",
-                            MiddleName = "Ronald Reuei"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            FirstName = "Herman",
-                            LastName = "Melville"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            FirstName = "Frank",
-                            LastName = "Herbert"
-                        },
-                        new
-                        {
-                            Id = 5,
-                            LastName = "Seuss",
-                            Prefix = "Dr."
-                        });
                 });
 
             modelBuilder.Entity("BookStore.Api.Entities.Book", b =>
