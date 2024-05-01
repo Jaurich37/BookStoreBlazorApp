@@ -1,0 +1,45 @@
+GET http://localhost:5177/authors
+
+
+###
+GET http://localhost:5177/authors/1
+
+
+###
+POST http://localhost:5177/authors
+Content-Type: application/json
+
+{
+    "prefix": "Dr.",
+    "firstName": "Kenneth",
+    "lastName": "Noisewater",
+}
+
+# {
+#     "firstName": "James",
+#     "lastName": "Westfall",
+# }
+
+# {
+#     "prefix": "Mr.",
+#     "firstName": "James",
+#     "middleName": "Earl",
+#     "lastName": "Jones",
+# }
+
+# {
+#     "lastName": "Aurich",
+# }
+
+
+###
+PUT http://localhost:5177/authors/11
+Content-Type: application/json
+
+{
+    "name": "Romance"
+}
+
+
+###
+DELETE http://localhost:5177/authors/13

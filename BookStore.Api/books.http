@@ -1,0 +1,29 @@
+GET http://localhost:5177/books
+
+###
+GET http://localhost:5177/books/1
+
+###
+POST http://localhost:5177/books
+Content-Type: application/json
+
+{
+    "name": "The Cat in the Hat",
+    "authorId": 5,
+    "genreId": 8,
+    "publishDate": "1937-09-21"
+}
+
+###
+PUT http://localhost:5177/books/1
+Content-Type: application/json
+
+{
+    "name": "The Hobbit",
+    "author": "John Ronald Renuel Tolkien",
+    "genreId": 8,
+    "publishDate": "1937-09-21"
+}
+
+###
+DELETE http://localhost:5177/books/7

@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Development\\Learning\\Fullstack\\Blazor\\BookStore\\BookStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BookStore.Frontend.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BookStore.Frontend.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\Development\\Learning\\Fullstack\\Blazor\\BookStore\\BookStore.Frontend\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BookStore.Frontend.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BookStore.Frontend.props",
+      "PackagePath": "build\\BookStore.Frontend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BookStore.Frontend.props",
+      "PackagePath": "buildMultiTargeting\\BookStore.Frontend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BookStore.Frontend.props",
+      "PackagePath": "buildTransitive\\BookStore.Frontend.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,117 @@
+﻿@page "/editbook"
+@page "/editBook/{id:int}"
+@rendermode InteractiveServer
+
+@inject NavigationManager NavigationManager
+@inject BooksClient BooksClient
+@inject AuthorsClient AuthorsClient
+@inject GenresClient GenresClient
+
+<PageTitle>@title</PageTitle>
+<h3>@title</h3>
+
+@if (book is null || genres is null || authors is null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div class="row">
+        <div class="col-md-4">
+            <EditForm Model="@book" FormName="editBook" OnValidSubmit="HandleSubmitAsync" Enhance>
+                <DataAnnotationsValidator />
+                <ValidationSummary />
+            <div class="mb-3">
+                <label for="name" class="form-label">Name:</label>
+                <InputText id="name" @bind-Value="book.Name" class="form-control"/>
+                <ValidationMessage For="() => book.Name" />
+            </div>
+            <div class="mb-3">
+                <label for="author" class="form-label">Author:</label>
+                <InputSelect id="author" @bind-Value="book.AuthorId" class="form-select">
+                    <option value="">Select an Author</option>
+                    @foreach (var author in authors)
+                    {
+                        <option value="@author.Id">@author.FullName</option>
+                    }
+                </InputSelect>
+                <ValidationMessage For="() => book.AuthorId" />
+            </div>
+            <div class="mb-3">
+                <label for="genre" class="form-label">Genre:</label>
+                <InputSelect id="genre" @bind-Value="book.GenreId" class="form-select">
+                    <option value="">Select a genre</option>
+                    @foreach (var genre in genres)
+                    {
+                        <option value="@genre.Id">@genre.Name</option>
+                    }
+                </InputSelect>
+                <ValidationMessage For="() => book.GenreId" />
+            </div>
+            <div class="mb-3">
+                <label for="publishDate" class="form-label">Publish Date:</label>
+                <InputDate id="publishDate" @bind-Value="book.PublishDate" class="form-control"/>
+            </div>
+            <button type="submit" class="btn btn-primary">Save</button>
+            <a role="button" class="btn btn-secondary" href="/">Cancel</a>
+            </EditForm>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public int? Id {get; set;}
+
+    [SupplyParameterFromForm]
+    private BookDetails? book {get; set;}
+
+    private Genre[]? genres;
+    private Author[]? authors;
+
+    private string title = "";
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (book is not null) { return; }
+
+        if (Id is not null)
+        {
+            book = await BooksClient.GetBookAsync(Id.Value);
+            title = $"Edit: {book.Name}";
+        }
+        else 
+        {
+            book = new() 
+            {
+                Name = string.Empty,
+                PublishDate = DateOnly.FromDateTime(DateTime.UtcNow)
+            };
+
+            title = "New Book";
+        }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        genres = await GenresClient.GetGenresAsync();
+        authors = await AuthorsClient.GetAuthorsAsync();
+    }
+
+    private async Task HandleSubmitAsync()
+    {
+        ArgumentNullException.ThrowIfNull(book);
+
+        if (Id is null)
+        {
+            await BooksClient.AddBookAsync(book);
+        }
+        else
+        {
+            book.Id = Id.Value;
+            await BooksClient.UpdateBookAsync(book);
+        }
+
+        NavigationManager.NavigateTo("/");
+    }
+}

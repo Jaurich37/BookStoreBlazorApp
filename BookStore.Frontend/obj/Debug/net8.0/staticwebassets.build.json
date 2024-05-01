@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "Hash": "rJGGUAK5iszN/l3IQ0eqKvncbvkv9iae2l68humbQto=",
+  "Source": "BookStore.Frontend",
+  "BasePath": "_content/BookStore.Frontend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "BookStore.Frontend\\wwwroot",
+      "Source": "BookStore.Frontend",
+      "ContentRoot": "D:\\Development\\Learning\\Fullstack\\Blazor\\BookStore\\BookStore.Frontend\\wwwroot\\",
+      "BasePath": "_content/BookStore.Frontend",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Development\\Learning\\Fullstack\\Blazor\\BookStore\\BookStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BookStore.Frontend.styles.css",
+      "SourceId": "BookStore.Frontend",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Development\\Learning\\Fullstack\\Blazor\\BookStore\\BookStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/BookStore.Frontend",
+      "RelativePath": "BookStore.Frontend.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\Development\\Learning\\Fullstack\\Blazor\\BookStore\\BookStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BookStore.Frontend.styles.css"
+    },
+    {
+      "Identity": "D:\\Development\\Learning\\Fullstack\\Blazor\\BookStore\\BookStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BookStore.Frontend.bundle.scp.css",
+      "SourceId": "BookStore.Frontend",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Development\\Learning\\Fullstack\\Blazor\\BookStore\\BookStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/BookStore.Frontend",
+      "RelativePath": "BookStore.Frontend.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\Development\\Learning\\Fullstack\\Blazor\\BookStore\\BookStore.Frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BookStore.Frontend.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\Development\\Learning\\Fullstack\\Blazor\\BookStore\\BookStore.Frontend\\wwwroot\\app.css",
+      "SourceId": "BookStore.Frontend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Development\\Learning\\Fullstack\\Blazor\\BookStore\\BookStore.Frontend\\wwwroot\\",
+      "BasePath": "_content/BookStore.Frontend",
+      "RelativePath": "app.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\app.css"
+    }
+  ]
+}
