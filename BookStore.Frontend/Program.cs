@@ -10,14 +10,8 @@ builder.Services.AddRazorComponents()
 var bookStoreApiUrl = builder.Configuration["BookStoreApiUrl"] ?? throw new Exception("BookStoreApiUrl is not set");
 
 builder.Services.AddHttpClient<BooksClient>(client => client.BaseAddress = new Uri(bookStoreApiUrl));
-
 builder.Services.AddHttpClient<AuthorsClient>(client => client.BaseAddress = new Uri(bookStoreApiUrl));
-
 builder.Services.AddHttpClient<GenresClient>(client => client.BaseAddress = new Uri(bookStoreApiUrl));
-
-// builder.Services.AddSingleton<BooksClient>();
-// builder.Services.AddSingleton<AuthorsClient>();
-// builder.Services.AddSingleton<GenresClient>();
 
 var app = builder.Build();
 
